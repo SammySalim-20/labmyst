@@ -1,0 +1,16 @@
+<%- include('partials/headers') %>
+
+<section class="explore-products">
+  <h1>Explore Our Products</h1>
+  <div class="product-grid">
+    <% products.forEach(product => { %>
+      <div class="product-card">
+        <img src="<%= product.image %>" alt="<%= product.name %>" />
+        <h3><%= product.name %></h3>
+        <p><%= product.description %></p>
+      </div>
+    <% }) %>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

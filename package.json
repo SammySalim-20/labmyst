@@ -1,0 +1,31 @@
+{
+  "name": "labmyst-homepage",
+  "version": "1.0.0",
+  "description": "Homepage for Labmyst.com - Laboratory Equipment and Scientific Instruments Supplier",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [
+    "labmyst",
+    "lab-equipment",
+    "scientific-instruments",
+    "nodejs",
+    "express",
+    "homepage"
+  ],
+  "author": "Labmyst.com",
+  "license": "ISC",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

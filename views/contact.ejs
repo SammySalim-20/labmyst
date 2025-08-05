@@ -1,0 +1,15 @@
+<%- include('partials/headers') %>
+
+<section class="contact">
+  <h1>Contact Us</h1>
+  <p>We're here to help. Reach out for product inquiries, custom solutions, or distributor partnerships.</p>
+
+  <form action="/send-message" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Your Email" required><br>
+    <textarea name="message" placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<%- include('partials/footer') %>

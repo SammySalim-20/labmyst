@@ -1,0 +1,18 @@
+<%- include('partials/headers') %>
+
+<section class="analytical">
+  <h1>Analytical Instruments</h1>
+  <p>Explore our advanced range of instruments designed for precise analytical measurements.</p>
+
+  <div class="instrument-grid">
+    <% instruments.forEach(inst => { %>
+      <div class="instrument-card">
+        <img src="<%= inst.image %>" alt="<%= inst.name %>">
+        <h3><%= inst.name %></h3>
+        <p><%= inst.description %></p>
+      </div>
+    <% }) %>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

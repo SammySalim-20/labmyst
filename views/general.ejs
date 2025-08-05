@@ -1,0 +1,18 @@
+<%- include('partials/headers') %>
+
+<section class="general">
+  <h1>General Laboratory Equipment</h1>
+  <p>Reliable, durable, and essential lab tools for daily operations.</p>
+
+  <div class="equipment-grid">
+    <% equipment.forEach(item => { %>
+      <div class="equipment-card">
+        <img src="<%= item.image %>" alt="<%= item.name %>">
+        <h3><%= item.name %></h3></a>
+        <p><%= item.description %></p>
+      </div>
+    <% }) %>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
