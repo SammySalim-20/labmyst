@@ -8,7 +8,7 @@
     <% equipment.forEach(item => { %>
       <div class="equipment-card">
         <img src="<%= item.image %>" alt="<%= item.name %>">
-        <h3><%= item.name %></h3></a>
+        <h3><a href="/products/general/<%= item.slug %>"><%= item.name %></a></h3>
         <p><%= item.description %></p>
       </div>
     <% }) %>

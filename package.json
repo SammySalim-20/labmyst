@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Homepage for Labmyst.com - Laboratory Equipment and Scientific Instruments Supplier",
   "main": "app.js",
-  "scripts": {
+  "type": "module",
+    "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
@@ -15,6 +16,7 @@
     "express",
     "homepage"
   ],
+  
   "author": "Labmyst.com",
   "license": "ISC",
   "engines": {
@@ -27,5 +29,10 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.3"
-  }
+  },
+"license": "MIT",
+"repository": {
+  "type": "git",
+  "url": "https://github.com/SammySalim-20/labmyst-homepage.git"
+}
 }

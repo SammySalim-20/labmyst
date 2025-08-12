@@ -1,17 +1,19 @@
 <%- include('partials/headers') %>
 
 <section class="medical">
-  <h1>Medical & Clinical Devices</h1>
-  <p>Precision-engineered devices designed for hospitals, clinics, and diagnostic labs.</p>
+  <div class="container">
+    <h1>Medical & Clinical Devices</h1>
+    <p>Precision-engineered devices designed for hospitals, clinics, and diagnostic labs.</p>
 
-  <div class="device-grid">
-    <% devices.forEach(item => { %>
-      <div class="device-card">
-        <img src="<%= item.image %>" alt="<%= item.name %>">
-        <h3><%= item.name %></h3>
-        <p><%= item.description %></p>
-      </div>
-    <% }) %>
+    <div class="device-grid">
+      <% devices.forEach(item => { %>
+        <div class="device-card">
+          <img src="<%= item.image %>" alt="<%= item.name %> image">
+          <h3><%= item.name %></h3>
+          <p><%= item.description %></p>
+        </div>
+      <% }) %>
+    </div>
   </div>
 </section>
 
